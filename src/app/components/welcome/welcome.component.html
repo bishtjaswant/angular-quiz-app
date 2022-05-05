@@ -1,0 +1,22 @@
+<div class=" py-4 bg-light">
+  <h1 class="text-uppercase display-5 fw-bold">welcome to quiz application</h1>
+  <p class=" col-md-6 fs-5 bg-danger">This quiz will contains total 9 questions. Each Question holds 10 Points</p>
+  <p class="display-6 text-capitalize">rules</p>
+  <ol>
+    <li>correct question give you 10 points</li>
+    <li>incorrect question give you -10 points</li>
+    <li>you will only have 10 seconds to answer of each questions </li>
+    <li>refresh the page will reset your quiz</li>
+  </ol>
+  <h5 class="text-capitalize text-md-center ">All the best</h5>
+
+  <div class="col-md-4">
+    <div class="form-group">
+      <label for="name">Enter name</label>
+      <input type="text" #contestent_name id="name" placeholder="Enter your name" class="form-control">
+    </div>
+    <div class="mt-2">
+      <button class="text-capitalize  btn btn-primary"  (click)="startQuiz()" routerLink="/questions">Start quiz</button>
+    </div>
+  </div>
+</div>
